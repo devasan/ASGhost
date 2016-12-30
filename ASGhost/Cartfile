@@ -1,0 +1,4 @@
+github "AFNetworking/AFNetworking"
+github "SnapKit/Masonry"
+github "rs/SDWebImage"
+github "Mantle/Mantle"
