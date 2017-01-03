@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5309A2F81E1B8C73007DFACF /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5309A2F71E1B8C73007DFACF /* NotificationCenter.framework */; };
+		5309A2FC1E1B8C73007DFACF /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5309A2FB1E1B8C73007DFACF /* TodayViewController.m */; };
+		5309A2FF1E1B8C73007DFACF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5309A2FD1E1B8C73007DFACF /* MainInterface.storyboard */; };
+		5309A3031E1B8C73007DFACF /* ASGhost-Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5309A2F61E1B8C73007DFACF /* ASGhost-Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5309A3081E1BA738007DFACF /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5370C6C91E16168300C60C34 /* Masonry.framework */; };
 		5370C6931E16070A00C60C34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5370C6921E16070A00C60C34 /* main.m */; };
 		5370C6961E16070A00C60C34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5370C6951E16070A00C60C34 /* AppDelegate.m */; };
 		5370C6991E16070A00C60C34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5370C6981E16070A00C60C34 /* ViewController.m */; };
@@ -22,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5309A3011E1B8C73007DFACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5370C6861E16070A00C60C34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5309A2F51E1B8C73007DFACF;
+			remoteInfo = "ASGhost-Extension";
+		};
 		5370C6A81E16070A00C60C34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5370C6861E16070A00C60C34 /* Project object */;
@@ -38,7 +50,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5309A3071E1B8C73007DFACF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5309A3031E1B8C73007DFACF /* ASGhost-Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5309A2F61E1B8C73007DFACF /* ASGhost-Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ASGhost-Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5309A2F71E1B8C73007DFACF /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		5309A2FA1E1B8C73007DFACF /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		5309A2FB1E1B8C73007DFACF /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		5309A2FE1E1B8C73007DFACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5309A3001E1B8C73007DFACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5370C68E1E16070A00C60C34 /* ASGhost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASGhost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5370C6921E16070A00C60C34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5370C6941E16070A00C60C34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +95,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5309A2F31E1B8C73007DFACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5309A2F81E1B8C73007DFACF /* NotificationCenter.framework in Frameworks */,
+				5309A3081E1BA738007DFACF /* Masonry.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5370C68B1E16070A00C60C34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,12 +132,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5309A2F91E1B8C73007DFACF /* ASGhost-Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5309A2FA1E1B8C73007DFACF /* TodayViewController.h */,
+				5309A2FB1E1B8C73007DFACF /* TodayViewController.m */,
+				5309A2FD1E1B8C73007DFACF /* MainInterface.storyboard */,
+				5309A3001E1B8C73007DFACF /* Info.plist */,
+			);
+			path = "ASGhost-Extension";
+			sourceTree = "<group>";
+		};
 		5370C6851E16070A00C60C34 = {
 			isa = PBXGroup;
 			children = (
 				5370C6901E16070A00C60C34 /* ASGhost */,
 				5370C6AA1E16070A00C60C34 /* ASGhostTests */,
 				5370C6B51E16070A00C60C34 /* ASGhostUITests */,
+				5309A2F91E1B8C73007DFACF /* ASGhost-Extension */,
 				5370C68F1E16070A00C60C34 /* Products */,
 				5370C6C41E16167B00C60C34 /* Frameworks */,
 			);
@@ -108,6 +161,7 @@
 				5370C68E1E16070A00C60C34 /* ASGhost.app */,
 				5370C6A71E16070A00C60C34 /* ASGhostTests.xctest */,
 				5370C6B21E16070A00C60C34 /* ASGhostUITests.xctest */,
+				5309A2F61E1B8C73007DFACF /* ASGhost-Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +225,7 @@
 				5370C6C91E16168300C60C34 /* Masonry.framework */,
 				5370C6C71E16168000C60C34 /* Mantle.framework */,
 				5370C6C51E16167C00C60C34 /* AFNetworking.framework */,
+				5309A2F71E1B8C73007DFACF /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -249,6 +304,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5309A2F51E1B8C73007DFACF /* ASGhost-Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5309A3061E1B8C73007DFACF /* Build configuration list for PBXNativeTarget "ASGhost-Extension" */;
+			buildPhases = (
+				5309A2F21E1B8C73007DFACF /* Sources */,
+				5309A2F31E1B8C73007DFACF /* Frameworks */,
+				5309A2F41E1B8C73007DFACF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ASGhost-Extension";
+			productName = "ASGhost-Extension";
+			productReference = 5309A2F61E1B8C73007DFACF /* ASGhost-Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5370C68D1E16070A00C60C34 /* ASGhost */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5370C6BB1E16070B00C60C34 /* Build configuration list for PBXNativeTarget "ASGhost" */;
@@ -257,10 +329,12 @@
 				5370C68B1E16070A00C60C34 /* Frameworks */,
 				5370C68C1E16070A00C60C34 /* Resources */,
 				5370C6CD1E1616B600C60C34 /* ShellScript */,
+				5309A3071E1B8C73007DFACF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5309A3021E1B8C73007DFACF /* PBXTargetDependency */,
 			);
 			name = ASGhost;
 			productName = ASGhost;
@@ -312,9 +386,13 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = asan;
 				TargetAttributes = {
-					5370C68D1E16070A00C60C34 = {
+					5309A2F51E1B8C73007DFACF = {
 						CreatedOnToolsVersion = 8.2;
 						ProvisioningStyle = Automatic;
+					};
+					5370C68D1E16070A00C60C34 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Manual;
 					};
 					5370C6A61E16070A00C60C34 = {
 						CreatedOnToolsVersion = 8.2;
@@ -344,11 +422,20 @@
 				5370C68D1E16070A00C60C34 /* ASGhost */,
 				5370C6A61E16070A00C60C34 /* ASGhostTests */,
 				5370C6B11E16070A00C60C34 /* ASGhostUITests */,
+				5309A2F51E1B8C73007DFACF /* ASGhost-Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5309A2F41E1B8C73007DFACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5309A2FF1E1B8C73007DFACF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5370C68C1E16070A00C60C34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +483,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5309A2F21E1B8C73007DFACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5309A2FC1E1B8C73007DFACF /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5370C68A1E16070A00C60C34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,6 +520,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5309A3021E1B8C73007DFACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5309A2F51E1B8C73007DFACF /* ASGhost-Extension */;
+			targetProxy = 5309A3011E1B8C73007DFACF /* PBXContainerItemProxy */;
+		};
 		5370C6A91E16070A00C60C34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5370C68D1E16070A00C60C34 /* ASGhost */;
@@ -438,6 +538,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5309A2FD1E1B8C73007DFACF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5309A2FE1E1B8C73007DFACF /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		5370C69A1E16070A00C60C34 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -457,6 +565,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5309A3041E1B8C73007DFACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "ASGhost-Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devasan.ASGhost.ASGhost-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5309A3051E1B8C73007DFACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "ASGhost-Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devasan.ASGhost.ASGhost-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		5370C6B91E16070B00C60C34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -551,6 +693,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -566,6 +709,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -626,6 +770,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5309A3061E1B8C73007DFACF /* Build configuration list for PBXNativeTarget "ASGhost-Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5309A3041E1B8C73007DFACF /* Debug */,
+				5309A3051E1B8C73007DFACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5370C6891E16070A00C60C34 /* Build configuration list for PBXProject "ASGhost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
