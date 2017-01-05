@@ -1,0 +1,18 @@
+//
+//  ASGhost-Prefix.pch
+//  ASGhost
+//
+//  Created by 鲁微 on 05/01/2017.
+//  Copyright © 2017 asan. All rights reserved.
+//
+
+#ifndef ASGhost_Prefix_pch
+#define ASGhost_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ASGhost_Prefix_pch */
+
+#import "ASDefines.h"
+
